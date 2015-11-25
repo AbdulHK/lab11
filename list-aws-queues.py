@@ -18,4 +18,4 @@ conn = boto.sqs.connect_to_region("eu-west-1", aws_access_key_id=access_key_id, 
 # Get a list of the queues that exists and then print the list out
 rs = conn.get_all_queues()
 for q in rs:
-	print q.id
+print q.id
