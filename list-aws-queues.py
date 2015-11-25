@@ -1,4 +1,3 @@
-
 import boto.sqs
 import boto.sqs.queue
 from boto.sqs.message import Message
