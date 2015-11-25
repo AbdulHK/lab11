@@ -1,8 +1,4 @@
-# This script created a queue
-#
-# Author - Paul Doyle Nov 2015
-#
-#
+
 import boto.sqs
 import boto.sqs.queue
 from boto.sqs.message import Message
