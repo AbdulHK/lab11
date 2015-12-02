@@ -19,11 +19,15 @@ q_name = sys.argv[1]
 
 q = conn.get_queue(q_name)
 
-m = q.read()
-str = m.get_body()
-
-print("Message read: " + str)
-
-q.delete_message(m)
-
-print("Message deleted from the queue")
+if (q is None):
+  print("Queue does not exist")
+else: 
+  m = q.read()
+  
+  str = m.get_body()
+  
+  print("Message read: " + str)
+  
+  q.delete_message(m)
+  
+  print("Message deleted from the queue")
